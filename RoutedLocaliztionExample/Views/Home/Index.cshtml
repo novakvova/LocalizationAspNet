@@ -1,0 +1,10 @@
+﻿@model RoutedLocaliztionExample.Models.FullViewModel
+@{
+    ViewBag.Title = RoutedLocaliztionExample.Resources.Strings.SomeLocalisedString;// "Home Page";
+}
+
+<div class="jumbotron">
+    <p>@(Model.LocalisedString)</p>
+    @Html.LabelFor(m=>m.CreationDateTime)
+</div>
+
